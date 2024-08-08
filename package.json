@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@devicescript/cli": "^2.16.4"
+  },
+  "private": true,
+  "scripts": {
+    "build": "devicescript build index.ts",
+    "flash": "devicescript flash --board pico",
+    "run": "devicescript run index.ts",
+    "watch": "devicescript devtools index.ts"
+  }
+}
