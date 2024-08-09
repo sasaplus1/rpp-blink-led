@@ -1,11 +1,13 @@
 {
   "devDependencies": {
-    "@devicescript/cli": "^2.16.4"
+    "@devicescript/cli": "^2.16.4",
+    "@tsconfig/strictest": "^2.0.5"
   },
   "private": true,
   "scripts": {
     "build": "devicescript build index.ts",
     "flash": "devicescript flash --board pico",
+    "postinstall": "devicescript build --quiet index.ts # install node_modules/@devicescript/*",
     "run": "devicescript run index.ts",
     "watch": "devicescript devtools index.ts"
   }
