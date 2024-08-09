@@ -7,7 +7,7 @@
   "scripts": {
     "build": "devicescript build index.ts",
     "flash": "devicescript flash --board pico",
-    "postinstall": "devicescript build --quiet index.ts # install node_modules/@devicescript/*",
+    "postinstall": "devicescript --quiet build index.ts # install node_modules/@devicescript/*",
     "run": "devicescript run index.ts",
     "watch": "devicescript devtools index.ts"
   }
